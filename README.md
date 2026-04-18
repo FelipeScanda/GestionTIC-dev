@@ -40,6 +40,7 @@ JWT_SECRET=super_secret_key
 Migraciones Prisma
 
 npx prisma migrate deploy
+
 npx prisma generate
 
 
@@ -65,17 +66,23 @@ Esto generará la carpeta dist, la cual se debe copiar dentro de la carpeta del 
 Modo normal
 
 cd GestionTIC-backend
+
 node src/app.js
 
 Con PM2 (recomendado)
 
 pm2 start src/app.js --name gestiontic
+
 pm2 save
 
 
 ⸻
 
 Acceso
+
+Desde el dispositivo servidor (si aplica):
+
+http://localhost:3000
 
 Desde cualquier dispositivo en la red:
 
@@ -118,7 +125,7 @@ El sistema utiliza Socket.IO para actualizar automáticamente:
 
 Requisitos
 	•	Node.js 20
-	•	PostgreSQL
+	•	SQLite
 	•	Git
 
 ⸻
