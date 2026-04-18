@@ -1,0 +1,65 @@
+.user-header {
+  width: 100%;
+  height: 65px;
+  background-color: #284EF7;
+  padding: 14.5px 40px;
+  display: flex;
+  justify-content: center; /* centra el contenido horizontalmente */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.user-header .header-content {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* centra el contenido a la izquierda */
+}
+
+/* Contenedor del menú usuario */
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+/* Botón cerrar sesión */
+.logout-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 8px;
+  margin-top: 4px;
+}

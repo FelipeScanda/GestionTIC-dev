@@ -1,0 +1,44 @@
+/* Fondo oscuro */
+.confirm-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+/* Caja del modal */
+.confirm-modal {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+
+    width: 100%;
+    max-width: 400px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+/* Texto */
+.confirm-modal-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Botones */
+.confirm-modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}

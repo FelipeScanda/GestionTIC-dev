@@ -1,0 +1,114 @@
+.datatable-section {
+    margin-bottom: 40px;
+}
+
+.datatable-title h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.datatable-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.datatable-header {
+    display: grid;
+    background-color: #f5f6fa;
+    font-weight: 600;
+    padding: 16px 12px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.datatable-header-cell {
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.datatable-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.datatable-row {
+    display: grid;
+    padding: 16px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.datatable-row:hover {
+    background-color: #fafafa;
+}
+
+/* Centra automáticamente todas las columnas */
+.datatable-row > div {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.datatable-empty {
+    padding: 30px;
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+}
+
+/* ===== Título + Buscador ===== */
+
+.datatable-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.datatable-search {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+    width: 220px;
+}
+
+.datatable-search:focus {
+    border-color: #999;
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+/* Hace que parezca clickeable */
+.datatable-row.clickable {
+    cursor: pointer;
+}
+
+/* Panel expandido */
+.datatable-expanded {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    animation: expandFade 0.2s ease-in-out;
+}
+
+.datatable-expanded div {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+/* Animación suave */
+@keyframes expandFade {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

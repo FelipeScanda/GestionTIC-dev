@@ -1,0 +1,11 @@
+.usuarios-actions {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.usuarios-expanded-actions {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}

@@ -1,0 +1,56 @@
+/* Ajuste del calendario interno */
+.fc {
+    height: 100%;
+}
+
+/* Header */
+.fc-toolbar-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* Botones */
+.fc-button {
+    border-radius: 6px !important;
+    padding: 4px 10px !important;
+}
+
+/* Eventos */
+.fc-event {
+    border: none !important;
+    padding: 2px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Hover efecto */
+.fc-event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Texto del evento */
+.fc-event-title {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    font-size: 0.8rem;
+}
+
+/* Para contenido expandido */
+.fc-event div {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+/* Scroll interno si hay muchos eventos */
+.fc-scroller {
+    overflow-y: auto !important;
+}

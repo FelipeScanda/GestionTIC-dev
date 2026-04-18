@@ -1,0 +1,47 @@
+.primary-button {
+  padding: 12px 20px;
+  background-color: #287FF7;
+  border: none;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
+  
+}
+
+.primary-button:hover {
+  background-color: #284EF7;
+}
+
+.header-button {
+  padding: 12px 20px;
+  background-color: #284EF7;
+  border: none;
+  font-weight: bold;
+  color: white;
+  text-shadow: black 1px 1px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
+}
+
+.header-button:hover {
+  background-color: #1234cd;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.cancelar-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.cancelar-button:hover {
+    background-color: #c0392b;
+}
+
