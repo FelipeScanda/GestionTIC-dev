@@ -16,17 +16,22 @@ Instalación (desde cero)
 
 1. Clonar repositorio
 
-git clone https://github.com/FelipeScanda/gestiontic.git
-cd gestiontic
+Para SSH:
+git clone git@github.com:FelipeScanda/GestionTIC-dev.git
+
+Para HTTPS:
+git clone https://github.com/FelipeScanda/GestionTIC-dev.git
 
 
 ⸻
 
 2. Backend
 
+cd GestionTIC-backend
+
 npm install
 
-Crear archivo .env
+Crear archivo .env y copiar lo siguiente dentro de el
 
 DATABASE_URL="file:./dev.db"
 
@@ -42,12 +47,24 @@ npx prisma generate
 
 3. Frontend
 
+cd GestionTIC-frontend
+
+npm install
+
 
 Ejecutar aplicación
 
+1. Primero se debe buildear el frontend de la siguiente manera:
+
+cd GestionTIC-frontend
+
+npm run build
+
+Esto generará la carpeta dist, la cual se debe copiar dentro de la carpeta del backend
+
 Modo normal
 
-cd backend
+cd GestionTIC-backend
 node src/app.js
 
 Con PM2 (recomendado)
