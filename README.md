@@ -3,6 +3,7 @@ Gestión TIC
 Sistema web para la gestión de préstamos de equipos tecnológicos, con roles de usuario y administrador, calendario de disponibilidad y control en tiempo real.
 
 ⸻
+
 Tecnologías
 	•	Frontend: React (Vite)
 	•	Backend: Node.js + Express
